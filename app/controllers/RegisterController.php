@@ -96,7 +96,8 @@ class RegisterController extends controller
                     "user" => [
                         "user_name" => $name,
                         "email" => $email,
-                        "password" => Helper::encrypt2($pass)
+                        "password" => Helper::encrypt2($pass),
+                        "id_role_fk" => ROLES['user']
                     ],
                     "profile" =>[
                         "first_name" => $name,

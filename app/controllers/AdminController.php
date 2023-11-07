@@ -44,10 +44,11 @@ class AdminController extends Controller
         $data = [
             "titulo"    => "Home",
             "subtitulo" => "Saludo del sistema",
-            "menu" => true
+            "menu"      => true
         ];
 
         /** Se llama al método "view" en la instancia actual para renderizar una vista*/
         $this->view("admin", $data, 'app');
     }
 }
+
